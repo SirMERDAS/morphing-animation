@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 .container {
   position: absolute;
   left: 50%;
@@ -14,10 +17,11 @@
 }
 .footer {
   font-family: sans-serif;
-  position: absolute;
+  position: fixed;
   bottom: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 .footer a {
   text-decoration: none;
