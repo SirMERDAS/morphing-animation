@@ -1,0 +1,51 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.morph-square {
+  background-color: rgba(99, 205, 218, 1);
+  width: 250px;
+  height: 250px;
+  animation: Morph 2s ease 1s infinite;
+  box-shadow: 0 0 30px 0.7rem rgba(99, 205, 218, 0.6);
+  border-radius: 10%;
+}
+.footer {
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer a {
+  text-decoration: none;
+  color: #0984e3;
+}
+@keyframes Morph {
+  0% {
+    border-radius: 10%;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 25%;
+    transform: rotate(90deg);
+    background-color: rgba(248, 165, 194, 1);
+    box-shadow: 0 0 30px 0.7rem rgba(248, 165, 194, 0.6);
+  }
+  50% {
+    border-radius: 50%;
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 25%;
+    transform: rotate(270deg);
+    background-color: rgba(243, 166, 131, 1);
+    box-shadow: 0 0 30px 0.7rem rgba(243, 166, 131, 0.6);
+  }
+  100% {
+    border-radius: 10%;
+    transform: rotate(360deg);
+  }
+}
